@@ -1,7 +1,7 @@
 # TB_Statup Scripts Installation
 
-This is a start-up script for 3DS Max to replace a maxstart.max file.
-This will setup the default state for 3DS Max simplifying standards across entire team.
+This is a start-up script for 3DS Max to replace a maxstart.max file.  
+This will setup the default state for 3DS Max simplifying standards across entire team.  
 Script will be run under the following conditions:
    * 3DS Max start
    * Reset Max: File -> Reset
@@ -14,19 +14,27 @@ Script will be run under the following conditions:
 
 ## Manual Installation
 
-1. Copy the Troy_Starup.ms script to the following folder:
+1. Copy the ```Troy_Starup.ms``` script to the 3DS Max MaxScript startup folder:
 
-    F:\01_3DSMax_Default\Startup
+    If using the system variables for 3DS Max tools use ```%ADSK_3DSMAX_STARTUPSCRIPTS_ADDON_DIR%``` directory.  
+        e.g. ```F:\01_3DSMax_Default\Startup```
 
-2. Copy the TB_ViewportStats.mcr to the following folder:
+    Or use the standard 3DS Max user startup folder:  
+        ```C:\Users\<user name>\AppData\Local\Autodesk\3dsMax\2024 - 64bit\ENU\scripts\startup```
 
-    F:\01_3DSMax_Default\UserMacros
+2. Copy the ```TB_ViewportStats.mcr``` to the following folder:
 
-3. Restart 3dsmax.
+    If using the Autodesk system variables for 3DS Max tools use ```%ADSK_3DSMAX_MACROS_ADDON_DIR%``` directory.  
+        e.g. ```F:\01_3DSMax_Default\UserMacros```  
+
+    Or use the standard 3DS Max user macroscript folder:  
+        ```C:\Users\<user name>\AppData\Local\Autodesk\3dsMax\2024 - 64bit\ENU\usermacros```  
+
+3. Restart 3dsmax.  
 
 ## Uninstallation
 
-1. Delete the Troy_Startup.ms script from the above folder
+1. Delete the ```Troy_Startup.ms``` and ```TB_ViewportStats.mcr``` scripts from the folders used above.
 
 ## What does this script do:
     * Set default directory location for #scripts to the following folder: F:\01_3DSMax_Default\Scripts\
