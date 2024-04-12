@@ -34,49 +34,48 @@ addRollout _SRlt_WSUVT_Info WSUVT_rf rolledup:true
 
 # MaxSript Library Index
 
-### Merge Max Files to Layers
-This script will merge all max files, in the provided folder, into the current 3DS Max scene. The contents of each merged max file will be placed on a new layer with the name of the source Max file.
+### Camera Animation Key Reducer
+This script was developed to stabilize camera animation created from VR headsets within 3DS Max.  
+**Documentation:** [Camera Animation Key Reducer](documentation/Camera%20Animation%20Key%20Reducer/TB_CameraAnimKeyReduction.md)
 
+### Material ID By Face Normals
+This script will assign a material ID based on the objects face normal direction within a given angle falloff. X, Y, and Z directions can be assigned a custom material ID number.  
+**Documentation:** [Material ID By Face Normals](documentation/Assing%20MatID%20By%20Normal/TB_MatIDByFaceNormals.md)
+
+### Merge Max Files to Layers
+This script will merge all max files, in the provided folder, into the current 3DS Max scene. The contents of each merged max file will be placed on a new layer with the name of the source Max file.  
 **Documentation:** [Merge Max Files To Layer Documentation](documentation/Merge%20Max%20Files/TB_MergeMaxFilesToLayers.md)
 
 ### Layers From Object Names
-This script will go through all objects within the Max file and assign them to a new layer matching the object's name.
-
+This script will go through all objects within the Max file and assign them to a new layer matching the object's name.  
 **Documentation:** [Layers From Object Names Documentation](documentation/Layers%20From%20Object%20Names/TB_LayersFromObjectNames.md)
 
 ### Model Asset Prep
-This script is used to process 3D models and prepare them for import into Unreal. Options to control what process(es) to run on the assets. The main function of this script is to create consistency within the asset development process and serve as a validation utility making sure the models are setup correctly before being exported to Unreal.
-
+This script is used to process 3D models and prepare them for import into Unreal. Options to control what process(es) to run on the assets. The main function of this script is to create consistency within the asset development process and serve as a validation utility making sure the models are setup correctly before being exported to Unreal.  
 **Documentation:** [Model Asset Prep Documentation](documentation/Model%20Asset%20Prep/TB_ModelAssetPrep.md)
 
 ### Reorder Material IDs
-This script will remove any gaps within the material ID numbers assigned to the model, and a new MultiSub material will be generated for the object.
-
+This script will remove any gaps within the material ID numbers assigned to the model, and a new MultiSub material will be generated for the object.  
 **Documentation:** [Reorder MAterial IDs Documenation](documentation/Reorder%20Material%20IDs/TB_ReorderMaterialIDs.md)
 
 ### UV Channel Cleaner
-This script removes missing UV channel data preventing Unreal from moving UV data to a different UV channel.
-
+This script removes missing UV channel data preventing Unreal from moving UV data to a different UV channel.  
 **Documentation:** [UV Channel Cleaner Documentation](documentation/UV%20Channel%20Cleaner/TB_UVChannelCleaner.md)
 
 ### World Scale UV Tiling
-This script scales the UVs to match the provided dimensions in relationship to the model.
-
+This script scales the UVs to match the provided dimensions in relationship to the model.  
 **Documentation:** [World Scale UV Tiling Documentation](documentation/World%20Scale%20UV%20Tiling/TB_WorldScaleUVTiling.md)
 
 ### UV Scale Check
-This script will create a reference 1m cube and apply a checker material representing the universal UV scale. This same material is then applied to the asset for QC visual inspection of the UVs. Options for adjusting the model UV scale provided to easy QC fixes.
-
+This script will create a reference 1m cube and apply a checker material representing the universal UV scale. This same material is then applied to the asset for QC visual inspection of the UVs. Options for adjusting the model UV scale provided to easy QC fixes.  
 **Documentation:** [UV Scale Check Documentation](documentation/UV%20Scale%20Check/TB_UVScaleCheck.md)
 
 ### Quick FBX Export
-This script quickly exports the currently open Max file bypassing all pop-up dialogs and settings.
-
+This script quickly exports the currently open Max file bypassing all pop-up dialogs and settings.  
 **Documentation:** [Quick FBX Export Documentation](documentation/Quick%20FBX%20Export/TB_QuickFBXExport.md)
 
 ### DataSmith Scene Export
-This script automates exporting a DataSmith file out of 3DS Max. Works on both the entire scene or on the selected layers.
-
+This script automates exporting a DataSmith file out of 3DS Max. Works on both the entire scene or on the selected layers.  
 **Documentation:** [DataSmith Scene Export Documentation](documentation/DataSmith%20Scene%20Export/TB_SceneExportTool.md)
 
 
