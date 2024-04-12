@@ -50,6 +50,10 @@ This script will merge all max files, in the provided folder, into the current 3
 This script will go through all objects within the Max file and assign them to a new layer matching the object's name.  
 **Documentation:** [Layers From Object Names Documentation](documentation/Layers%20From%20Object%20Names/TB_LayersFromObjectNames.md)
 
+### Create PBR VRay Material Library
+This tool looks into a source folder for PBR textures and creates a VRay Material for each PBR texture set. Additionally, the VRay Material is setup so the artist only needs to change the bitmap tiling in one node and automatically updates the others. Once all the materials are created, the artist can quickly save out a material library.  
+**Documentation:** [Create PBR VRay Material Library](documentation/Create%20VRay%20PBR%20Material/TB_CreateVRayPBRLibrary.md)
+
 ### Model Asset Prep
 This script is used to process 3D models and prepare them for import into Unreal. Options to control what process(es) to run on the assets. The main function of this script is to create consistency within the asset development process and serve as a validation utility making sure the models are setup correctly before being exported to Unreal.  
 **Documentation:** [Model Asset Prep Documentation](documentation/Model%20Asset%20Prep/TB_ModelAssetPrep.md)
