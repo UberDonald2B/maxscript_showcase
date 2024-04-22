@@ -54,6 +54,10 @@ This script will go through all objects within the Max file and assign them to a
 This tool looks into a source folder for PBR textures and creates a VRay Material for each PBR texture set. Additionally, the VRay Material is setup so the artist only needs to change the bitmap tiling in one node and automatically updates the others. Once all the materials are created, the artist can quickly save out a material library.  
 **Documentation:** [Create PBR VRay Material Library](documentation/Create%20VRay%20PBR%20Material/TB_CreateVRayPBRLibrary.md)
 
+### Auto UV Unwrap Unwrella
+This tool will take the selected object(s) and use the Unwrella plugin to UV Unwrap the UVs. This is a non-destructive process leaving the modifier in the stack should additional adjustments be needed beyond the predefined standards.  
+**Documentation:** [Auto UV Unwrap Unwrella](documentation/Auto%20UV%20Unwrella/TB_AutoUVUnwrella.md)
+
 ### Model Asset Prep
 This script is used to process 3D models and prepare them for import into Unreal. Options to control what process(es) to run on the assets. The main function of this script is to create consistency within the asset development process and serve as a validation utility making sure the models are setup correctly before being exported to Unreal.  
 **Documentation:** [Model Asset Prep Documentation](documentation/Model%20Asset%20Prep/TB_ModelAssetPrep.md)
