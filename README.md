@@ -42,6 +42,10 @@ This script was developed to stabilize camera animation created from VR headsets
 This script will assign a material ID based on the objects face normal direction within a given angle falloff. X, Y, and Z directions can be assigned a custom material ID number.  
 **Documentation:** [Material ID By Face Normals](documentation/Assing%20MatID%20By%20Normal/TB_MatIDByFaceNormals.md)
 
+### Detach By Material ID
+This script was developed to quickly separate an single object into individual meshes based on the material ID assigned to an object's face.  
+**Documentation:** [Detach By Material ID](documentation/Detach%20By%20MatID/TB_DetachByMaterialID.md)
+
 ### Merge Max Files to Layers
 This script will merge all max files, in the provided folder, into the current 3DS Max scene. The contents of each merged max file will be placed on a new layer with the name of the source Max file.  
 **Documentation:** [Merge Max Files To Layer Documentation](documentation/Merge%20Max%20Files/TB_MergeMaxFilesToLayers.md)
@@ -82,6 +86,11 @@ This script will create a reference 1m cube and apply a checker material represe
 This script quickly exports the currently open Max file bypassing all pop-up dialogs and settings.  
 **Documentation:** [Quick FBX Export Documentation](documentation/Quick%20FBX%20Export/TB_QuickFBXExport.md)
 
+### DataSmith Material Setup Export
+This tool will create box objects, to store metadata information, for exporting scene materials into Unreal.  
+**NOTE:** All materials will need to adhere to specific TB material guidelines for simplicity.  
+A box object will be created for each material containing the required metadata information required to create the material in Unreal using established Master Shaders in Unreal.
+
 ### DataSmith Scene Export
 This script automates exporting a DataSmith file out of 3DS Max. Works on both the entire scene or on the selected layers.  
 **Documentation:** [DataSmith Scene Export Documentation](documentation/DataSmith%20Scene%20Export/TB_SceneExportTool.md)
@@ -91,16 +100,14 @@ This script automates exporting a DataSmith file out of 3DS Max. Works on both t
 # _______________________________________________
 # Installation
 
-1. Create a user environment variable named `TB_MAXSCRIPTS` on the machine and set it to the github root `maxscript_tools` folder.
-
-    (e.g. `G:\03_Projects\00_GitHub\maxscript_tools`)
-
-2. Setup System Environment Variables now supported in 3DS Max 2022+
-* Startup Directory: **ADSK_3DSMAX_STARTUPSCRIPTS_ADDON_DIR** variable to e.g. *'F:\01_3DSMax_Default\Startup'*
-* Macros Directory: **ADSK_3DSMAX_MACROS_ADDON_DIR** variable to e.g. *'F:\01_3DSMax_Default\UserMacros'*
-* User Icons Directory: **ADSK_3DSMAX_ICONS_ADDON_DIR** variable to e.g. *'F:\01_3DSMax_Default\UserIcons'*
-
-When setup correctly, the system variables should look like the following image.
+1. Create a user environment variable named `TB_MAXSCRIPTS` on the machine and set it to the github root `maxscript_tools` folder.  
+    (e.g. `G:\03_Projects\00_GitHub\maxscript_tools`)  
+2. Setup System Environment Variables now supported in 3DS Max 2022+  
+* Startup Directory: **ADSK_3DSMAX_STARTUPSCRIPTS_ADDON_DIR** variable to e.g. *'F:\01_3DSMax_Default\Startup'*  
+* Macros Directory: **ADSK_3DSMAX_MACROS_ADDON_DIR** variable to e.g. *'F:\01_3DSMax_Default\UserMacros'*  
+* User Icons Directory: **ADSK_3DSMAX_ICONS_ADDON_DIR** variable to e.g. *'F:\01_3DSMax_Default\UserIcons'*  
+  
+When setup correctly, the system variables should look like the following image.  
 ![](images/system_variables.png)
 
 3. Run the `autoupdate/user_install.bat` script to automatically load scripts from the server everytime you start max.
